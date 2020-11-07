@@ -29,6 +29,6 @@ setup(
         "pytest>=3",
     ],
     url="https://github.com/Necior/sasin",
-    version="1.0.0",
+    version="1.1.0",
     zip_safe=False,
 )
