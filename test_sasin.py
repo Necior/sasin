@@ -41,5 +41,5 @@ def test_human_readable(number: Number, formatted: str) -> None:
         (70000000, "1 sasin"),
     ],
 )
-def test_to_sasin_human_readable(pln: Number, sasin: str) -> None:
+def test_pln_to_sasin(pln: Number, sasin: str) -> None:
     assert pln_to_sasin(pln) == sasin
