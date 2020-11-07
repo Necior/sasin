@@ -42,14 +42,19 @@ def _choose_prefix(x: Number) -> _Prefix:
 
 
 def _human_readable(x: Number) -> str:
+    if x < 0:
+        x = -x
+        sign = "-"
+    else:
+        sign = ""
     if x == 0:
         return "0"
     prefix = _choose_prefix(x)
     in_new_base = _to_prefix(x, prefix)
     s = str(in_new_base).rstrip("0").rstrip(".")
     if not prefix.symbol:
-        return s
-    return f"{s} {prefix.symbol}"
+        return f"{sign}{s}"
+    return f"{sign}{s} {prefix.symbol}"
 
 
 def pln_to_sasin(x: Number) -> str:
