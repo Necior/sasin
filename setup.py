@@ -18,7 +18,7 @@ setup(
     include_package_data=True,
     keywords="sasin",
     long_description=open("./README.md").read(),
-    long_description_content_type='text/markdown',
+    long_description_content_type="text/markdown",
     name="sasin",
     py_modules=["sasin"],
     setup_requires=[
